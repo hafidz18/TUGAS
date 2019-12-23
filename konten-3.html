@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	.topnav1 {
+		overflow: hidden;
+		background-color: blue;
+		font-family: arial;
+		}
+	.topnav2 {
+		overflow: hidden;
+		background-color: black;
+		font-family: arial;
+		}
+	.topnav1 a {
+		float: left;
+		color: white;
+		padding: 25px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 15px;
+		}
+	.topnav2 a {
+		float: left;
+		color: white;
+		padding: 13px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 15px;
+		}
+	.topnav1 a:hover {
+		background-color:#3d3d3d;
+		color: white;
+		}
+	.topnav2 a:hover {
+		background-color:blue;
+		color: white;
+		}
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+		}
+	.column {
+		float: left;
+		}
+	* {
+		box-sizing: border-box;
+		}
+	.card1{
+		width: 145px;
+		height: 250px;
+		margin: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		font-family: arial;
+		}
+	.card2{
+		width: 420px;
+		height: 120px;
+		margin: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		font-family: arial;
+		}
+	.card2 a {
+		float: left;
+		padding:2px;
+		width: 199px;
+		}
+	.card1 a:link {
+		color: black;
+		background-color: transparent;
+		text-decoration: none;
+		}
+	.card1 a:visited {
+		color: black;
+		background-color: transparent;
+		text-decoration: none;
+		}
+	.card1 a:hover {
+		color: black;
+		background-color: transparent;
+		text-decoration: underline;
+		}
+	.card1 a:active {
+		color: black;
+		background-color: transparent;
+		text-decoration: underline;
+		}
+	.judul {
+		width:920px;
+		height: auto;
+		overflow: hidden;
+		margin-left: 25px;
+		margin-top: 25px;
+		background-color: blue;
+		font-size: 15px;
+		padding: 10px;
+		color: white;
+		font-family: arial;
+		}
+	.content1 {
+		width:920px;
+		height: auto;
+		overflow: hidden;
+		margin-left: 25px;
+		background-color: white;
+		}
+	.content2 {
+		width:920px;
+		height: 250px;
+		overflow: hidden;
+		margin-left: 25px;
+		background-color: white;
+		}
+	.content3 {
+		width:300px;
+		height: auto;
+		overflow: hidden;
+		margin-right: 40px;
+		background-color: white;
+		}
+	.footer {
+		text-align: center;
+		background: blue;
+		width: 280px;
+		transparent: 50%;
+		color: white;
+		margin: 2px 12px;
+		}
+	input {
+		width: 65px;
+		color: black;
+		}
+	button {
+		text-align: center;
+		}
+	body {
+		background-image: url(wallpaper.jpg);
+		background-size: cover;
+		background-attachment:fixed;
+		margin:0;
+		}
+	#sidebar{
+	width				: auto;
+	position 			: relative;
+	float				: right;
+}
+	.judul1 {
+		width:300px;
+		height: auto;
+		overflow: hidden;
+		margin-right: 40px;
+		margin-top: 25px;
+		background-color: blue;
+		font-size: 25px;
+		padding: 10px;
+		color: white;
+		font-family: arial;
+	}
+</style>
+</head>
+<body>
+	<header><div style="background-color:white"><img src="logi.png" alt="logo" width="300px" height="80px"></div></header>
+	<div class="topnav1">
+		<a href="Halaman.html">Home</a>
+		<a href="Daftar.html">Daftar Anime</a>
+		<a href="#">Lagu Anime</a>
+		<a href="#">Fall 2019</a>
+		<a href="#">A-Z</a>
+		<a href="#">Genre</a>
+		<a href="#">Producers</a>
+		<a href="#">Season</a>
+		<a href="#">Studio</a>
+	</div>
+	<div class="topnav2">
+		<a href="Action.html" style="padding-left:25px">Action</a>
+		<a href="#">Adventure</a>
+		<a href="#">Comedy</a>
+		<a href="#">Demons</a>
+		<a href="#">Drama</a>
+		<a href="#">Ecchi</a>
+		<a href="#">Fantasy</a>
+		<a href="#">Game</a>
+		<a href="#">Harem</a>
+		<a href="#">Historical</a>
+		<a href="#">Horor</a>
+		<a href="#">Josei</a>
+		<a href="#">Magic</a>
+		<a href="#">Martial Arts</a>
+		<a href="#">Mecha</a>
+		<a href="#">Military</a>
+		<a href="#">Music</a>
+	</div>
+	<div id="sidebar">
+		<div class="judul1">
+		<b>Filter Search</b>
+		</div>
+		<div class="content3">
+			<table style="padding:10px 46px" border="1" cellpadding="7.6" cellspacing="7.6">
+			<tr>
+				<td>Genre All</td>
+				<td>Season All</td>
+			</tr>
+			<tr>
+				<td>Status All</td>
+				<td>Tipe All</td>
+			</tr>
+			<tr>
+				<td>Sort Default</td>
+				<td><input type="text" name="Pencarian" placeholder="Search..."/></td>
+			</tr>
+			</table>
+		<div class="footer">
+			<b>Filter</b>
+		</div>
+		</div>
+		<div class="judul1">
+		<b>Episode Terbaru</b>
+		</div>
+		<div class="content3">
+		<table border="0">
+		<tr>
+			<td style="padding-left:10px">Black Clover Episode 113</td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Vinland Saga Episode 21</td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Val x Love Episode 10</td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Rifle Is Beautiful Episode 8</td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Boruto Episode 135</td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">One Piece Episode 913</td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Boku no Hero Academia Season 4 Episode 8</td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Dr. Stone Episode 23</td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">No Guns Life Episode 9</td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Azur Lane Episode 9</td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Choyoyu Episode 10</td>
+		</tr>
+		</table>
+	</div></div>
+	<div class="judul">
+		<p>Beranda >> Anime >> <strong>Occultic;Nine</strong></p>
+	</div>
+	<div style="margin-top:10px" class="content1">
+		<img src="occultic.png" alt="gambar" width="920px" height="270px">
+	</div>
+	<div class="content2">
+		<img style="float:left; padding:25px 10px 10px 10px" src="img-3.png" alt="profil" width="auto" height="auto">
+		<h3>Occultic;Nine Subtitle Indonesia</h3>
+	<table border="0">
+	<tr><td>
+	<ul style="float:left; list-style-type:square">
+		<li>English			: Occultic;Nine</li>
+		<li>Duration		: 24 min per episode</li>
+		<li>Season			: Fall 2016</li>
+		<li>Date Aired		: Oct 9, 2016 to Dec 25, 2016</li>
+		<li>Total Episode	: 12</li>
+		<li>Posted on		: August 5, 2019</li>
+	</ul></td>
+	<td>
+	<ul style="float:left; list-style-type:square">
+		<li>Status			: Finished Airing</li>
+		<li>Genres			: Mystery, Sci-Fi</li>
+		<li>Producers		: </li>
+		<li>Type			: TV</li>
+		<li>Posted by		: Samehadaku</li>
+	</ul></td></tr></table></div>
+		<div class="judul">
+		<h2>Daftar Episode Anime Occultic;Nine sub indo</h2>
+	</div>
+	<div class="content1">
+	<table border="0" style="margin:10px">
+		<tr>
+			<th style="margin:20px; background-color:blue; color:white" width="100px">Episode</th>
+			<th style="margin:20px; background-color:blue; color:white" width="500px">Judul</th>
+			<th style="margin:20px; background-color:blue; color:white" width="200px">Tanggal Liris</th>
+			<th style="margin:20px; background-color:blue; color:white" width="100px">Download</th>
+		</tr>
+		<tr>
+			<td style="text-align:center">12</td>
+			<td>Occultic;Nine Episode 12</td>
+			<td>December 24, 2016</td>
+			<td style="text-align:center"><a href="#">Download</a></td>
+		</tr>
+		<tr>
+			<td style="text-align:center">11</td>
+			<td>Occultic;Nine Episode 11</td>
+			<td>December 18, 2016</td>
+			<td style="text-align:center"><a href="#">Download</a></td>
+		</tr>
+		<tr>
+			<td style="text-align:center">10</td>
+			<td>Occultic;Nine Episode 10</td>
+			<td>December 10, 2016</td>
+			<td style="text-align:center"><a href="#">Download</a></td>
+		</tr>
+		<tr>
+			<td style="text-align:center">9</td>
+			<td>Occultic;Nine Episode 9</td>
+			<td>December 3, 2016</td>
+			<td style="text-align:center"><a href="#">Download</a></td>
+		</tr>
+		<tr>
+			<td style="text-align:center">8</td>
+			<td>Occultic;Nine Episode 8</td>
+			<td>November 28, 2016</td>
+			<td style="text-align:center"><a href="#">Download</a></td>
+		</tr>
+		<tr>
+			<td style="text-align:center">7</td>
+			<td>Occultic;Nine Episode 7</td>
+			<td>November 19, 2016</td>
+			<td style="text-align:center"><a href="#">Download</a></td>
+		</tr>
+		<tr>
+			<td style="text-align:center">6</td>
+			<td>Occultic;Nine Episode 6</td>
+			<td>November 12, 2016</td>
+			<td style="text-align:center"><a href="#">Download</a></td>
+		</tr>
+		<tr>
+			<td style="text-align:center">5</td>
+			<td>Occultic;Nine Episode 5</td>
+			<td>November 5, 2016</td>
+			<td style="text-align:center"><a href="#">Download</a></td>
+		</tr>
+		<tr>
+			<td style="text-align:center">4</td>
+			<td>Occultic;Nine Episode 4</td>
+			<td>October 30, 2016</td>
+			<td style="text-align:center"><a href="#">Download</a></td>
+		</tr>
+	</table></div>
+	<footer style="text-align:center"><div style="background-color:lightgray"><img src="logi.png" alt="logo" width="300px" height="80px"></footer>
+</body>
+</html>

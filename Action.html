@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tugas Praktikum</title>
+<style>
+	.topnav1 {
+		overflow: hidden;
+		background-color: blue;
+		font-family: arial;
+		}
+	.topnav2 {
+		overflow: hidden;
+		background-color: black;
+		font-family: arial;
+		}
+	.topnav1 a {
+		float: left;
+		color: white;
+		padding: 25px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 15px;
+		}
+	.topnav2 a {
+		float: left;
+		color: white;
+		padding: 13px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 15px;
+		}
+	.topnav1 a:hover {
+		background-color:#3d3d3d;
+		color: white;
+		}
+	.topnav2 a:hover {
+		background-color:blue;
+		color: white;
+		}
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+		}
+	.column {
+		float: left;
+		}
+	* {
+		box-sizing: border-box;
+		}
+	.card1{
+		width: 145px;
+		height: 250px;
+		margin: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		font-family: arial;
+		}
+	.card2{
+		width: 420px;
+		height: 120px;
+		margin: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		font-family: arial;
+		}
+	.card2 a {
+		float: left;
+		padding:2px;
+		width: 199px;
+		text-decoration:none;
+		color: blue;
+		}
+	.card1 a:link {
+		color: black;
+		background-color: transparent;
+		text-decoration: none;
+		}
+	.card1 a:visited {
+		color: black;
+		background-color: transparent;
+		text-decoration: none;
+		}
+	.card1 a:hover {
+		color: black;
+		background-color: transparent;
+		text-decoration: underline;
+		}
+	.card1 a:active {
+		color: black;
+		background-color: transparent;
+		text-decoration: underline;
+		}
+	.judul {
+		width:830px;
+		height: auto;
+		overflow: hidden;
+		margin-left: 25px;
+		margin-top: 25px;
+		background-color: blue;
+		font-size: 15px;
+		color: white;
+		font-family: arial;
+		}
+	.content1 {
+		width:830px;
+		height: auto;
+		overflow: hidden;
+		margin-left: 25px;
+		background-color: white;
+		text-align: center;
+		}
+	.content2 {
+		width:920px;
+		height: 555px;
+		overflow: hidden;
+		margin-left: 25px;
+		background-color: white;
+		}
+	.content3 {
+		width:300px;
+		height: auto;
+		overflow: hidden;
+		margin-right: 40px;
+		background-color: white;
+		}
+	.footer {
+		text-align: center;
+		background: blue;
+		width: 280px;
+		transparent: 50%;
+		color: white;
+		margin: 2px 12px;
+		}
+	input {
+		width: 65px;
+		color: black;
+		}
+	button {
+		text-align: center;
+		}
+	body {
+		background-image: url(wallpaper.jpg);
+		background-size: cover;
+		background-attachment:fixed;
+		margin:0;
+		}
+#slider {
+  overflow: hidden;
+}
+
+.slide {
+  float: left;
+  position: relative;
+}
+
+#slide-holder {
+  width: 400%;
+  position: relative;
+  left: 0;
+  -webkit-animation: scroller 20s infinite;
+          animation: scroller 20s infinite;
+}
+
+@-webkit-keyframes scroller {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+  }
+  50% {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  100% {
+    -webkit-transform: translateX(-400px);
+            transform: translateX(-400px);
+  }
+}
+#sidebar{
+	width				: auto;
+	position 			: relative;
+	float				: right;
+}
+	.judul1 {
+		width:300px;
+		height: auto;
+		overflow: hidden;
+		margin-right: 40px;
+		margin-top: 25px;
+		background-color: blue;
+		font-size: 25px;
+		padding: 10px;
+		color: white;
+		font-family: arial;
+	}
+	.loginbox {
+			margin-left: 20px;
+			color: #fff;
+			float: left;
+			}
+	.loginbox input {
+			widht: 100%;
+			}
+	.loginbox input[type="submit"]
+		{
+			border: none;
+			outline: none;
+			background: #fb2525;
+			color: #fff;
+			font-size: 18px;
+			border-radius: 20px;
+			float: right;
+		}
+	.loginbox input[type="submit"]:hover
+		{
+			cursor: pointer;
+			background: #ffc107;
+			color: #000;
+		}
+</style>
+</head>
+<body>
+	<header><div style="background-color:white"><img src="logi.png" alt="logo" width="300px" height="80px"></div></header>
+	<div class="topnav1">
+		<a href="Halaman.html">Home</a>
+		<a href="Daftar.html">Daftar Anime</a>
+		<a href="#">Lagu Anime</a>
+		<a href="#">Fall 2019</a>
+		<a href="#">A-Z</a>
+		<a href="#">Genre</a>
+		<a href="#">Producers</a>
+		<a href="#">Season</a>
+		<a href="#">Studio</a>
+		<div class="loginbox">
+		<a href="file:///D:/Tugas%20pak%20hamid/Big_Project/login.html"><input type="submit" name="login" value="Login"></a>
+		</div>
+	</div>
+	<div class="topnav2">
+		<a href="#" style="padding-left:25px">Action</a>
+		<a href="#">Adventure</a>
+		<a href="#">Comedy</a>
+		<a href="#">Demons</a>
+		<a href="#">Drama</a>
+		<a href="#">Ecchi</a>
+		<a href="#">Fantasy</a>
+		<a href="#">Game</a>
+		<a href="#">Harem</a>
+		<a href="#">Historical</a>
+		<a href="#">Horor</a>
+		<a href="#">Josei</a>
+		<a href="#">Magic</a>
+		<a href="#">Martial Arts</a>
+		<a href="#">Mecha</a>
+		<a href="#">Military</a>
+		<a href="#">Music</a>
+	</div>
+	<div id="sidebar">
+		<div class="judul1">
+		<b>Filter Search</b>
+		</div>
+		<div class="content3">
+			<table style="padding:10px 46px" border="1" cellpadding="7.6" cellspacing="7.6">
+			<tr>
+				<td>Genre All</td>
+				<td>Season All</td>
+			</tr>
+			<tr>
+				<td>Status All</td>
+				<td>Tipe All</td>
+			</tr>
+			<tr>
+				<td>Sort Default</td>
+				<td><input type="text" name="Pencarian" placeholder="Search..."/></td>
+			</tr>
+			</table>
+		<div class="footer">
+			<b>Filter</b>
+		</div>
+		</div>
+		<div class="judul1">
+		<b>Ongoing Anime</b>
+		</div>
+		<div class="content3">
+		<table border="0">
+		<tr>
+			<td style="padding-left:10px">Rifle Is Beautiful</td>
+			<td style="padding-left:15px"><div style="background:blue; color:white">Episode 7</div></td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Sword Art Online: Alization...</td>
+			<td style="padding-left:15px"><div style="background:blue; color:white">Episode 9</div></td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Boku no Hero Academia Se...</td>
+			<td style="padding-left:15px"><div style="background:blue; color:white">Episode 8</div></td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Shokugeki no Shouma Seaso...</td>
+			<td style="padding-left:15px"><div style="background:blue; color:white">Episode 9</div></td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Hoshiai no Sora</td>
+			<td style="padding-left:15px"><div style="background:blue; color:white">Episode 9</div></td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">No Guns Life</td>
+			<td style="padding-left:15px"><div style="background:blue; color:white">Episode 9</div></td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Assassins Pride</td>
+			<td style="padding-left:15px"><div style="background:blue; color:white">Episode 9</div></td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Nanatsu no Taizai: Kamiga...</td>
+			<td style="padding-left:15px"><div style="background:blue; color:white">Episode 9</div></td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Phantasy Star Online 2: Epis...</td>
+			<td style="padding-left:15px"><div style="background:blue; color:white">Episode 9</div></td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Fairy Gone Season 2</td>
+			<td style="padding-left:15px"><div style="background:blue; color:white">Episode 7</div></td>
+		</tr>
+		<tr>
+			<td style="padding-left:10px">Bokutachi wa Bengkyou ga...</td>
+			<td style="padding-left:15px"><div style="background:blue; color:white">Episode 9</div></td>
+		</tr>
+		</table>
+	</div></div>
+	<div class="judul" style="margin:25px">
+		<p>Beranda >> <strong>Action</strong></p>
+	</div>
+	<div class="content1">
+	<div class="row">
+	<div class="column">
+		<div class="card1">
+		<a href="konten-1.html" ><img src="img-1.png" alt="content" width="auto" height="auto"></a>
+		<a href="konten-1.html">Dragon Ball Super</a>
+		</div></div>
+	<div class="column">
+		<div class="card1">
+		<a href="konten-2.html"><img src="img-2.png" alt="content" width="auto" height="auto"></a>
+		<a href="konten-2.html">Mobile Suit Gundam</a>
+		</div></div>
+	<div class="column">
+		<div class="card1">
+		<a href="konten-5.html"><img src="img-5.png" alt="content" width="auto" height="auto"></a>
+		<a href="konten-5.html">No Guns Life</a>
+		</div></div>
+	<div class="column">
+		<div class="card1">
+		<a href="konten-6.html"><img src="img-6.png" alt="content" width="auto" height="auto"></a>
+		<a href="konten-6.html">Tokyo Ghoul:re</a>
+		</div></div>
+	<div class="column">
+	<div class="card1">
+		<a href="konten-7.html"><img src="img-7.png" alt="content" width="auto" height="auto"></a>
+		<a href="konten-7.html">One Punch Man</a>
+		</div></div>
+	<div class="column">
+		<div class="card1">
+		<a href="konten-8.html"><img src="img-8.png" alt="content" width="auto" height="auto"></a>
+		<a href="konten-8.html">Kanata no Astra</a>
+		</div></div></div></div>
+	<footer style="text-align:center"><div style="background-color:lightgray"><img src="logi.png" alt="logo" width="300px" height="80px"></footer>
+</body>
+</html>
